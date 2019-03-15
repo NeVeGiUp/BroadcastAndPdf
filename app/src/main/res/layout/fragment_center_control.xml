@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/wzh_color_frag_bg">
+
+
+    <TextView
+        android:id="@+id/control_fragment_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/space_common_small_x"
+        android:drawableTop="@mipmap/jzkz_hyjm_n"
+        android:gravity="center_horizontal"
+        android:text="@string/jizhong_welcome"
+        android:textColor="@color/text_gray_deep"
+        android:textSize="@dimen/text_common_small_xx" />
+
+    <TextView
+        android:id="@+id/control_fragment_metting_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_common_large_xx"
+        android:layout_toEndOf="@id/control_fragment_welcome"
+        android:drawablePadding="@dimen/space_common_small_x"
+        android:drawableTop="@mipmap/jzkz_hyxx_n"
+        android:gravity="center_horizontal"
+        android:text="@string/jizhong_message"
+        android:textColor="@color/text_gray_deep"
+        android:textSize="@dimen/text_common_small_xx" />
+
+    <TextView
+        android:id="@+id/control_fragment_show_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_common_large_xx"
+        android:layout_toEndOf="@id/control_fragment_metting_info"
+        android:drawablePadding="@dimen/space_common_small_x"
+        android:drawableTop="@mipmap/jzkz_xsrm_n"
+        android:gravity="center_horizontal"
+        android:text="@string/jizhong_people_name"
+        android:textColor="@color/text_gray_deep"
+        android:textSize="@dimen/text_common_small_xx" />
+    <TextView
+        android:id="@+id/control_fragment_close_metting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_common_large_xx"
+        android:layout_toEndOf="@id/control_fragment_show_name"
+        android:drawablePadding="@dimen/space_common_small_x"
+        android:drawableTop="@mipmap/jzkz_jshy_n"
+        android:gravity="center_horizontal"
+        android:text="@string/jizhong_end"
+        android:textColor="@color/text_gray_deep"
+        android:textSize="@dimen/text_common_small_xx" />
+
+
+    <TextView
+        android:id="@+id/control_fragment_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/space_common_small_x"
+        android:drawableTop="@mipmap/jzkz_tyss_n"
+        android:layout_marginTop="@dimen/space_common_large_x"
+        android:layout_below="@id/control_fragment_welcome"
+        android:gravity="center_horizontal"
+        android:text="@string/jizhong_up"
+        android:textColor="@color/text_gray_deep"
+        android:textSize="@dimen/text_common_small_xx" />
+
+    <TextView
+        android:id="@+id/control_fragment_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_common_large_xx"
+        android:layout_alignBottom="@id/control_fragment_up"
+        android:layout_alignTop="@id/control_fragment_up"
+        android:layout_toEndOf="@id/control_fragment_up"
+        android:drawablePadding="@dimen/space_common_small_x"
+        android:drawableTop="@mipmap/jzkz_tyxj_n"
+        android:gravity="center_horizontal"
+        android:text="@string/jizhong_down"
+        android:textColor="@color/text_gray_deep"
+        android:textSize="@dimen/text_common_small_xx" />
+    <TextView
+        android:id="@+id/control_fragment_boot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/control_fragment_down"
+        android:layout_marginStart="@dimen/space_common_large_xx"
+        android:drawablePadding="@dimen/space_common_small_x"
+        android:drawableTop="@mipmap/jzkz_kj_n"
+        android:layout_toRightOf="@id/control_fragment_down"
+        android:gravity="center_horizontal"
+        android:text="@string/jizhong_open_machine"
+        android:textColor="@color/text_gray_deep"
+        android:textSize="@dimen/text_common_small_xx" />
+
+    <TextView
+        android:id="@+id/control_fragment_shut_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_common_large_xx"
+        android:layout_alignTop="@id/control_fragment_boot"
+        android:layout_toRightOf="@id/control_fragment_boot"
+        android:drawablePadding="@dimen/space_common_small_x"
+        android:drawableTop="@mipmap/jzkz_gj_n"
+        android:gravity="center_horizontal"
+        android:text="@string/jizhong_close_machine"
+        android:textColor="@color/text_gray_deep"
+        android:textSize="@dimen/text_common_small_xx"/>
+    <TextView
+        android:id="@+id/control_fragment_unlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/control_fragment_up"
+        android:drawablePadding="@dimen/space_common_small_x"
+        android:drawableTop="@mipmap/jzkz_gj_n"
+        android:gravity="center_horizontal"
+        android:text="@string/jizhong_Unlock"
+        android:textColor="@color/text_gray_deep"
+        android:textSize="@dimen/text_common_small_xx"
+        android:layout_marginTop="@dimen/space_common_large_x"
+        />
+
+    <TextView
+        android:id="@+id/control_fragment_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/control_fragment_up"
+        android:layout_marginTop="@dimen/space_common_large_x"
+        android:layout_marginStart="@dimen/space_common_large_xx"
+        android:layout_toRightOf="@id/control_fragment_unlock"
+        android:drawablePadding="@dimen/space_common_small_x"
+        android:drawableTop="@mipmap/jzkz_gj_n"
+        android:gravity="center_horizontal"
+        android:text="@string/jizhong_lock"
+        android:textColor="@color/text_gray_deep"
+        android:textSize="@dimen/text_common_small_xx"/>
+
+
+</RelativeLayout>

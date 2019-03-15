@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:elevation="2dp"
+    android:layout_marginLeft="@dimen/space_common"
+    xmlns:tools="http://schemas.android.com/tools">
+    <View
+        android:id="@+id/vote_details_item_view"
+        android:layout_width="@dimen/space_common_small_x"
+        android:layout_alignTop="@+id/vote_details_item_title"
+        android:layout_alignBottom="@+id/vote_details_item_name"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_view1"
+        />
+    <TextView
+        android:id="@+id/vote_details_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/vote_details_item_view"
+        android:layout_marginStart="@dimen/space_common_mid"
+        tools:text="反对:"
+        android:textColor="@color/color_blue_btn"
+        android:textSize="@dimen/text_common_large"
+        />
+    <TextView
+        android:id="@+id/vote_details_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vote_details_item_title"
+        android:layout_toEndOf="@id/vote_details_item_view"
+        android:layout_marginStart="@dimen/space_common_mid"
+        android:layout_marginTop="@dimen/space_common_small"
+        android:textColor="@color/text_black_common"
+        tools:text="lol, 啊啊啊啊, 起哦起哦起哦"
+        android:textSize="@dimen/text_common"
+        />
+</RelativeLayout>

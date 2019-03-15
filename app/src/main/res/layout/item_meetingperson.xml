@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_personal_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/ico_me_n"
+            android:visibility="invisible"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/tv_person_num"
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="序号"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_common" />
+        <TextView
+            android:id="@+id/tv_person_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:gravity="center"
+            android:text="名称"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_common" />
+        <TextView
+            android:id="@+id/tv_person_role"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="会议角色"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_common"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_person_unit"
+            android:layout_weight="2.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/sign_person_unit"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_common"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/tv_person_department"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="部门"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_common"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_person_position"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/sign_person_position"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_common"
+            android:gravity="center" />
+</LinearLayout>

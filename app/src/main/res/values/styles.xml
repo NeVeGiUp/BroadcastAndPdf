@@ -1,0 +1,101 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- <item name="android:windowAnimationStyle">@style/Animation.Activity.Style</item> -->
+        <item name="android:windowAnimationStyle">@style/Animation.Activity.Translucent.Style</item>
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!--屏幕常亮-->
+        <item name="android:keepScreenOn">true</item>
+        <!--&lt;!&ndash;沉浸状态栏&ndash;&gt;-->
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <!--隐藏状态栏-->
+        <item name="android:windowFullscreen">?android:windowNoTitle</item>
+    </style>
+
+    <style name="Animation.Activity.Translucent.Style" parent="@android:style/Animation.Translucent">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+    </style>
+        <!--隐藏状态栏-->
+        <!--<item name="android:windowFullscreen">?android:windowNoTitle</item>-->
+
+    <style name="Translucent_NoTitle" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:background">@android:color/transparent</item>-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="TabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Transparent" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="DialogTransparent" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:windowAnimationStyle">@style/Animation.Activity.Style</item>-->
+        <item name="android:windowAnimationStyle">@style/Animation.Activity.Translucent.Style</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">?android:windowNoTitle</item>
+        <item name="android:windowBackground">@color/common_transparent</item>
+        <!--屏幕常亮-->
+        <item name="android:keepScreenOn">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!--<style name="Anim_fade" parent="android:Theme.Light.NoTitleBar">-->
+    <!--<item name="android:windowAnimationStyle">@style/fade</item>-->
+    <!--</style>-->
+    <!--<style name="fade" parent="@android:style/Animation.Activity">-->
+    <!--<item name="android:activityOpenEnterAnimation">@anim/alpha_activity_in</item>-->
+    <!--<item name="android:activityOpenExitAnimation">@anim/alpha_activity_out</item>-->
+    <!--<item name="android:activityCloseEnterAnimation">@anim/alpha_activity_in</item>-->
+    <!--<item name="android:activityCloseExitAnimation">@anim/alpha_activity_out</item>-->
+    <!--</style>-->
+
+    <!-- 多状态视图样式-->
+    <style name="MultiStateStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <!--<item name="msv_loadingView">@layout/layout_state_loading</item>-->
+        <item name="msv_viewState">loading</item>
+        <item name="msv_emptyView">@layout/layout_state_empty</item>
+        <item name="msv_errorView">@layout/layout_state_error</item>
+
+    </style>
+    <!-- 底部出入动画 -->
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/in_righttoleft</item>
+        <item name="android:windowExitAnimation">@anim/out_lefttoright</item>
+    </style>
+
+    <style name="StyleBaseAttr">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/activity_horizontal_common</item>
+        <item name="android:textSize">@dimen/style_btn_text_size</item>
+    </style>
+
+    <style name="ButtonStyleBaseAttr" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_small</item>
+        <item name="android:background">@drawable/style_btn_click_change_gray</item>
+        <item name="android:textSize">@dimen/style_btn_text_size</item>
+        <item name="android:textColor">@color/style_all_common_color</item>
+    </style>
+
+</resources>

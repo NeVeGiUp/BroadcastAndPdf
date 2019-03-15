@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_blue_top_divide">
+
+    <RadioGroup
+        android:id="@+id/rg_annotation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/space_common_small_x"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <RadioButton
+            android:id="@+id/rb_document_annotation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_common_small"
+            android:text="@string/document_annotation"
+            android:textColor="@drawable/color_text_annotation"
+            android:textSize="@dimen/text_common_small_x"
+            android:checked="true"
+            android:button="@null"
+            android:drawableTop="@drawable/drawable_view_doc_annotation"
+            android:drawablePadding="@dimen/space_common_small_x" />
+        <RadioButton
+            android:id="@+id/rb_handwriten_annotation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_common_small"
+            android:text="@string/menu_pizhu"
+            android:textColor="@drawable/color_text_annotation"
+            android:textSize="@dimen/text_common_small_x"
+            android:checked="false"
+            android:button="@null"
+            android:drawableTop="@drawable/drawable_view_handwriten_annotation"
+            android:drawablePadding="@dimen/space_common_small_x"
+            android:layout_marginLeft="@dimen/space_common_large_xx"/>
+        <RadioButton
+            android:id="@+id/rb_electron_annotation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_common_small"
+            android:text="@string/baiban_option"
+            android:textColor="@drawable/color_text_annotation"
+            android:textSize="@dimen/text_common_small_x"
+            android:checked="false"
+            android:button="@null"
+            android:drawableTop="@drawable/drawable_view_electron_annotation"
+            android:drawablePadding="@dimen/space_common_small_x"
+            android:layout_marginLeft="@dimen/space_common_large_xx"/>
+        </RadioGroup>
+
+    <include layout="@layout/fragment_common_no_data"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@id/rg_annotation"
+        android:layout_centerInParent="true"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rl_filecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/color_blue_top_divide"
+        android:layout_below="@id/rg_annotation"/>
+
+</RelativeLayout>

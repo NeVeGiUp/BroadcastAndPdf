@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IP地址 :"
+                android:textSize="@dimen/text_common_large"
+                android:textColor="@color/text_gray_deep" />
+            <TextView
+                android:paddingLeft="@dimen/space_common_large_x"
+                android:id="@+id/tv_ip_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="172.16.9.189"
+                android:textSize="@dimen/text_common_large"
+                android:textColor="@color/text_gray_light" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/space_common_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="端口号 :"
+                android:textSize="@dimen/text_common_large"
+                android:textColor="@color/text_gray_deep" />
+            <TextView
+                android:paddingLeft="@dimen/space_common_large_x"
+                android:id="@+id/tv_id_nport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7360"
+                android:textSize="@dimen/text_common_large"
+                android:textColor="@color/text_gray_light" />
+        </LinearLayout>
+</LinearLayout>

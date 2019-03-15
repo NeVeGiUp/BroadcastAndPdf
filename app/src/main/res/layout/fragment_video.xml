@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line_bg_light"
+    android:orientation="vertical"
+    tools:context="com.itc.suppaperless.meetingmodule.fragment.VideoServiceFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_with"
+        android:background="@color/white">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/item_with"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_zhibo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:checked="true"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/set_zhibo"
+                android:text="@string/live_video"
+                android:textColor="@color/text_black_common"
+                android:textSize="@dimen/text_common_large" />
+
+            <RadioButton
+                android:id="@+id/rb_db"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:button="@null"
+                android:checked="false"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/set_db"
+                android:text="@string/on_demand_video"
+                android:textColor="@color/text_gray_deep"
+                android:textSize="@dimen/text_common_large" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_spfw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10">
+    </android.support.v7.widget.RecyclerView>
+    <include layout="@layout/fragment_common_no_data"/>
+</LinearLayout>

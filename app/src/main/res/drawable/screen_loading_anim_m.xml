@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@mipmap/screen_loading_one_m" android:duration="140"/>
+    <item android:drawable="@mipmap/screen_loading_two_m" android:duration="140"/>
+    <item android:drawable="@mipmap/screen_loading_three_m" android:duration="140"/>
+    <item android:drawable="@mipmap/screen_loading_four_m" android:duration="140"/>
+</animation-list>

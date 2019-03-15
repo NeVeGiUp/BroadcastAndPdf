@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?><!--<SurfaceView xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:id="@+id/screen_share_re_surface_view"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--/>-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--<TextureView-->
+        <!--android:id="@+id/screen_share_re_surface_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+    <SurfaceView
+        android:id="@+id/screen_share_re_surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/screen_share_re_sharer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_common_small"
+            android:layout_marginRight="@dimen/space_common_mid"
+            android:textSize="@dimen/text_common"
+            android:textColor="@color/common_red_30_alpha"
+            android:background="@color/common_transparent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:clickable="false"
+            />
+        <TextView
+            android:id="@+id/screen_share_re_asyn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_common_small"
+            android:background="@color/white"
+            android:text="@string/menu_liulan"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/screen_share_re_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/translucent"
+        android:src="@drawable/screen_loading_anim_m"
+        android:layout_gravity="center"
+        android:scaleType="center"
+        />
+</FrameLayout>

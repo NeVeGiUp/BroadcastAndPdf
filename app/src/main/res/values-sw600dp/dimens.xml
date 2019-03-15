@@ -1,0 +1,104 @@
+<resources>
+    <dimen name="yicheng_text_common">15sp</dimen>
+    <dimen name="yicheng_text_size_small">14sp</dimen>
+    <dimen name="yicheng_text_size_small_s">13sp</dimen>
+    <dimen name="yicheng_padding_max">20dp</dimen>
+    <dimen name="yicheng_padding_common">16dp</dimen>
+    <dimen name="yicheng_padding_small">12dp</dimen>
+    <dimen name="upload_list_top_tab_height">40dp</dimen>
+    <dimen name="comment_upload_marginleft">15dp</dimen>
+    <dimen name="upload_dialog_wight">700dp</dimen>
+    <dimen name="upload_dialog_height">500dp</dimen>
+    <dimen name="upload_dialog_file_item_height">57dp</dimen>
+    <dimen name="upload_marginLeft_small">10dp</dimen>
+    <dimen name="comment_upload_marginright">40dp</dimen>
+    <dimen name="bg_bottom_height">64dp</dimen>
+    <dimen name="show_text_write">40dp</dimen>
+    <dimen name="view_height_middle">30dp</dimen>
+    <dimen name="slogan_image_margin_comment_01">40dp</dimen>
+    <dimen name="slogan_image_margin_comment_top">40dp</dimen>
+    <dimen name="jizhong_textsize">22sp</dimen>
+    <dimen name="text_comment02">16sp</dimen>
+    <dimen name="text_comment01">19sp</dimen>
+    <dimen name="slogan_big_image_write_item">649dp</dimen>
+    <dimen name="slogan_big_image_height_item">393dp</dimen>
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <!--  常用文字大小 命名规范 以正文M为基准 (类似衣服型号)   XS S  M  L  XL XXL XXXL -->
+    <dimen name="text_common_large_x">22sp</dimen><!-- 顶部文字 -->
+    <dimen name="text_common_large">19sp</dimen><!-- 标题文字 -->
+    <dimen name="text_common">18sp</dimen><!-- 正文 -->
+    <dimen name="text_common_small">17sp</dimen><!-- 辅助文字 -->
+    <dimen name="text_common_small_x">16sp</dimen><!-- 用户名 -->
+    <dimen name="text_common_small_xx">15sp</dimen><!-- 时间 -->
+    <dimen name="text_a">20sp</dimen>
+    <!-- 文字最小 -->
+    <dimen name="text_toupiao_num_size">30sp</dimen><!-- 投票显眼的文字大小 -->
+    <dimen name="space_common_70">70dp</dimen><!-- 不常用的大间距 -->
+    <dimen name="space_common_large_xx">50dp</dimen><!-- 不常用的大间距 -->
+    <dimen name="space_common_large_x">40dp</dimen><!-- 不常用的大间距 -->
+    <dimen name="space_common_large">30dp</dimen><!-- 最常用的大间距 -->
+    <dimen name="space_common">20dp</dimen><!-- 最常用的平板基准间距 -->
+    <dimen name="space_common_mid">15dp</dimen><!-- 较常用的平板基准间距 -->
+    <dimen name="space_common_small">10dp</dimen><!-- 最常用的小间距 -->
+    <dimen name="space_common_small_x">5dp</dimen><!-- 最小间距 -->
+
+    <dimen name="line_height">1dp</dimen><!-- 通用分割线的高度or宽度 -->
+
+    <!-- 特殊间距和长度的dp  请自己命名(页面_用于的地方_长度or宽度), 并在手机的dimens文件里做相同命名的数值 -->
+    <!--务必保证手机的dimens里有相应的属性, 避免崩溃-->
+    <dimen name="right_bar_width">15dp</dimen>
+    <dimen name="pizhu_line_height">3dp</dimen>
+    <dimen name="pizhu_bar_height">63dp</dimen>
+    <dimen name="main_setting_margin_right">113dp</dimen>
+    <dimen name="setting_btn_width">380dp</dimen>
+    <dimen name="dialog_btn_height">50dp</dimen>
+    <dimen name="setting_edit_height">40dp</dimen>
+    <dimen name="setting_edit_whdth">220dp</dimen>
+    <dimen name="baiban_check_pre_height_width">80dp</dimen>
+    <dimen name="item_with">70dp</dimen>
+
+    <dimen name="fuwu_choice_padding">75dp</dimen>  <!--服务选项距两边的距离-->
+    <dimen name="send_message_edit_height">47dp</dimen> <!--信息发送输入框高度-->
+    <!--聊天底部栏高度-->
+    <dimen name="contect_all_select_height">63dp</dimen>  <!--联系人全选框高度-->
+    <dimen name="contect_name_margin">20dp</dimen>   <!--联系人头像与名字间距-->
+    <dimen name="chat_time_top">20dp</dimen>        <!--聊天顶部时间间距-->
+    <dimen name="chat_time_width">55dp</dimen>     <!--聊天顶部时间宽度-->
+    <dimen name="chat_user_pic_h">36dp</dimen>       <!--用户头像大小-->
+    <dimen name="chat_user_pic_w">28dp</dimen>       <!--用户头像大小-->
+
+    <dimen name="exception_text">12sp</dimen>
+    <dimen name="button_comment_write">100dp</dimen>
+    <dimen name="button_comment_height">32dp</dimen>
+    <dimen name="view_comment_separate">30dp</dimen>
+    <dimen name="sign_text">70sp</dimen>
+
+    <dimen name="main_maggin_top">26dp</dimen>
+    <dimen name="main_shape">333dp</dimen>
+
+    <dimen name="sign_btn_margin">160dp</dimen>
+    <dimen name="sign_name_text">80sp</dimen>
+    <dimen name="sign_position_text">40sp</dimen>
+
+    <dimen name="main_info_viewpager">70dp</dimen>
+    <dimen name="personal_info_image_margin">35dp</dimen>
+
+
+    <dimen name="loginbox_lenght">315dp</dimen>
+    <dimen name="loginbox_heigth">60dp</dimen>
+    <dimen name="meetinglist_item_width">180dp</dimen>
+    <dimen name="meetinglist_item_height">200dp</dimen>
+    <dimen name="item_speak_witch">140dp</dimen>
+    <dimen name="setting_btn_margin">56dp</dimen>
+    <dimen name="custom_dialog_width">400dp</dimen>
+
+    <dimen name="user_feedback_edit_height">140dp</dimen>
+    <dimen name="main_viewpager_margin">189dp</dimen>
+    <dimen name="main_viewpager_bottom">100dp</dimen>
+    <dimen name="right_padiing_size">25dp</dimen>
+    <dimen name="fingersise">300dp</dimen>
+
+    <dimen name="activity_horizontal_small">5dp</dimen>
+    <dimen name="style_btn_text_size">13sp</dimen>
+    <dimen name="activity_horizontal_common">10dp</dimen>
+</resources>

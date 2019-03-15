@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="5dp">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_view1"
+        android:layout_gravity="top" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/space_common_small"
+        android:paddingBottom="@dimen/space_common_small"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        tools:ignore="DisableBaselineAlignment">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center">
+            <CheckBox
+                android:id="@+id/cb_selecr_item"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_gravity="center_vertical"
+                android:button="@drawable/select_item_cb"/>
+        </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_seat_num"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/sign_seat_num"
+                android:textColor="@color/text_gray_deep" />
+
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/sign_name"
+                android:textSize="@dimen/text_common_small_xx"
+                android:textColor="@color/color_333333" />
+
+
+            <TextView
+                android:id="@+id/tv_unit"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/sign_person_unit"
+                android:textSize="@dimen/text_common_small_xx"
+                android:textColor="@color/color_333333" />
+
+
+            <TextView
+                android:id="@+id/tv_position"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/sign_person_position"
+                android:textSize="@dimen/text_common_small_xx"
+                android:textColor="@color/color_333333" />
+
+            <TextView
+                android:id="@+id/tv_sign_time"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/sign_time"
+                android:textSize="@dimen/text_common_small_xx"
+                android:textColor="@color/color_333333" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_view1"
+        android:layout_gravity="bottom" />
+</FrameLayout>

@@ -1,0 +1,19 @@
+package com.itc.suppaperless.meetingmodule.bean;
+
+import com.itc.suppaperless.base.BaseBean;
+
+/**
+ * Created by xiaogf on 19-2-22.
+ */
+
+public class CenterControl extends BaseBean {
+    private int iControlType;
+
+    public int getiControlType() {
+        return iControlType;
+    }
+
+    public void setiControlType(int iControlType) {
+        this.iControlType = iControlType;
+    }
+}

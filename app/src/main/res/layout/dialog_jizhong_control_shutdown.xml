@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_back">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shutdown_text"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:padding="@dimen/space_common_small_only"
+            android:textSize="@dimen/text_common_small_x"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/tv_close_window"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@mipmap/ic_close64dp"
+            android:padding="@dimen/space_common_small_x"
+            android:layout_marginRight="@dimen/space_common"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_close_terminal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/space_common_small_x"
+        android:paddingRight="@dimen/space_common_small_x"
+        android:paddingTop="@dimen/space_common_small"
+        android:paddingBottom="@dimen/space_common_small"
+        >
+        <CheckBox
+            android:id="@+id/cb_close_terminal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_content_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shutdown_terminal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_close_server_terminal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/space_common_small_x"
+        android:paddingRight="@dimen/space_common_small_x"
+        android:paddingTop="@dimen/space_common_small"
+        android:paddingBottom="@dimen/space_common_small">
+        <CheckBox
+            android:id="@+id/cb_close_server_terminal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_content_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shutdown_server_terminal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/space_common_small_only"
+        android:paddingBottom="@dimen/space_common_small_only">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_jzc_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_common_green_15radius"
+                android:textColor="@color/white"
+                android:text="@string/comment_sure"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_jzc_back"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_common_gray_15radius"
+                android:textColor="@color/white"
+                android:text="@string/comment_back"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

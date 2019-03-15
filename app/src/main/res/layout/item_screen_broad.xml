@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    android:layout_marginRight="2dp">
+    <TextView
+        android:id="@+id/text_live_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/img_live_icon"
+        android:text="奋斗史"
+        android:textColor="@color/text_black_common"
+        android:layout_marginLeft="@dimen/space_common"
+        android:textSize="@dimen/text_common_large" />
+    <ImageView
+        android:id="@+id/img_live_icon"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:paddingTop="@dimen/space_common_small"
+        android:paddingBottom="@dimen/space_common_small"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/icon_video"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_bg"
+        android:layout_alignParentBottom="true"/>
+    <TextView
+        android:id="@+id/text_live_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="直播中..."
+        android:textColor="@color/text_black_common"
+        android:layout_marginRight="@dimen/comment_upload_marginright"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/text_common_large"
+        android:visibility="gone"/>
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_blue_top_divide"
+    android:paddingTop="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+    <RelativeLayout
+        android:id="@+id/file_view_width"
+        android:background="@drawable/bg_meetingvote_shape"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/upload_dialog_file_item_height"
+        tools:ignore="UselessParent">
+        <TextView
+            android:id="@+id/tv_buttom"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_top"
+            android:layout_width="0dp"
+            android:background="@color/color_progress"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+            <ImageView
+                android:id="@+id/iv_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comment_upload_marginleft"
+                android:src="@mipmap/ic_jilu_wenjian"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:id="@+id/tv_upload_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/comment_upload_marginlefttwo"
+                android:textSize="@dimen/meeting_select_textsize"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/download_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/yicheng_padding_common"
+            tools:ignore="UseCompoundDrawables">
+            <TextView
+                android:id="@+id/download_text"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/btn_color_toupiao_text"
+                android:layout_marginRight="@dimen/yicheng_padding_small"
+                android:text="@string/file_waiting_download"/>
+            <ImageView
+                android:id="@+id/imageView_upload_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/comment_upload_marginleft"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

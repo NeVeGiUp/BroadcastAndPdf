@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left|center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_item_file"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        tools:ignore="UselessParent">
+
+        <CheckBox
+            android:id="@+id/chbox_filecheck"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:focusable="false"
+            android:button="@null"
+            android:background="@drawable/check_state"
+            android:layout_marginLeft="20dp"
+            android:focusableInTouchMode="false" />
+
+        <ImageView
+            android:id="@+id/img_fileIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_file"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/label_fileTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:minLines="1"
+                android:textColor="@color/text_black_common"
+                android:text="this is file title标题"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/label_fileMemo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2014-09-12 12:32:33  40.3KB"
+                android:textColor="@color/color_gray"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image_select_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/wenjian_list_nor2x" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_parentView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background">
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfview_browser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/image_browser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:visibility="gone"/>
+
+    <!-- 放大/缩小按钮 -->
+    <LinearLayout
+        android:id="@+id/ll_zoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/iv_pdf_zoomin"
+            android:src="@mipmap/ic_pdf_zoomin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_common_small_x"/>
+        <ImageView
+            android:id="@+id/iv_pdf_zoomout"
+            android:src="@mipmap/ic_pdf_zoomout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_common_small_x"
+            android:layout_marginTop="@dimen/space_common_small"/>
+    </LinearLayout>
+
+    <!-- 翻页提示按钮 -->
+    <TextView
+        android:id="@+id/tv_jump_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/icon_jxz"
+        android:drawablePadding="@dimen/activity_horizontal_small"
+        android:paddingTop="@dimen/space_common_small_only"
+        android:paddingBottom="@dimen/space_common_small_only"
+        android:paddingLeft="@dimen/space_common_small_x"
+        android:paddingRight="@dimen/space_common_mid"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_horizontal"
+        android:background="@drawable/bg_jumppage_right_radius"
+        android:text="@string/jump_page"
+        android:textSize="@dimen/text_common_small_xx"
+        android:textColor="@color/corlor_yiti_green"
+        android:visibility="gone"/>
+
+    <!-- 翻页操作 -->
+    <LinearLayout
+        android:id="@+id/ll_jumppage_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="@dimen/space_common_small_x"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jump_to"
+            android:textSize="@dimen/text_common_small_xx"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/common_black"/>
+
+        <EditText
+            android:id="@+id/et_page_input"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_common_small"
+            android:background="@drawable/bg_edittext_stroke"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:singleLine="true"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/pagenum"
+            android:textSize="@dimen/text_common_small_xx"
+            android:textColor="@color/common_black"/>
+        <TextView
+            android:id="@+id/tv_goto_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/go"
+            android:background="@drawable/bg_gobtn_circle_green"
+            android:layout_marginLeft="@dimen/space_common_small"
+            android:padding="@dimen/space_common_mid"
+            android:textSize="@dimen/text_common_small_xx"
+            android:textColor="@color/common_black"/>
+
+    </LinearLayout>
+
+    <com.itc.suppaperless.widget.CommonToolBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        expandableTextView:L_BtnIcon="@mipmap/ico_fanhui_n"
+        expandableTextView:R_BtnDrawableLeft="@mipmap/ic_pdfbrowse_qhwd_n"
+        expandableTextView:R_drawablePadding="@dimen/space_common_small"
+        expandableTextView:R_BtnText="@string/switch_file"
+        android:layout_alignParentTop="true"
+        android:background="@color/common_black"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_pdfmodule_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/tv_pdfmodule_pagenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_b"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/common_black"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_pdfmodule_preview"
+            android:padding="5dp"
+            android:layout_marginTop="@dimen/space_common_small_x"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_document_preview_white"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_navigation"
+        android:src="@mipmap/right_nav_n"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

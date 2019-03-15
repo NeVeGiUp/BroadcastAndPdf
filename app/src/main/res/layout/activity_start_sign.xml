@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background">
+    <LinearLayout
+        android:id="@+id/ll_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/space_common_large"
+        android:layout_marginStart="@dimen/space_common_large"
+        android:background="@drawable/bg_common_white"
+        android:gravity="center"
+        android:layout_above="@+id/ll_sign_btn"
+        android:layout_marginBottom="@dimen/space_common_large"
+        >
+        <TextView
+            android:id="@+id/tv_sign_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="@dimen/sign_name_text"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/space_common_large"
+        android:layout_above="@+id/ll_sign_btn"
+        />
+    <LinearLayout
+        android:id="@+id/ll_sign_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/space_common_large">
+        <TextView
+            android:id="@+id/bt_shouxie_sign_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清除"
+            android:textColor="@color/text_gray_light"
+            android:textSize="@dimen/text_common_small_xx"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:paddingStart="35dp"
+            android:paddingEnd="35dp"
+            android:background="@drawable/bg_login_back_btn"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/iv_start_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="签到"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_common_small_xx"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:paddingStart="35dp"
+            android:paddingEnd="35dp"
+            android:background="@drawable/bg_common_blue" />
+        <TextView
+            android:id="@+id/bt_shouxie_sign_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_common_small_xx"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:paddingStart="35dp"
+            android:paddingEnd="35dp"
+            android:background="@drawable/bg_common_blue"
+            android:visibility="invisible"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

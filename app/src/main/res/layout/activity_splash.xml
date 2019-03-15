@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_blue_light_x">
+
+    <ImageView
+        android:id="@+id/iv_start_anim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/progress_start_anim" />
+
+    <TextView
+        android:id="@+id/tv_start_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="@dimen/space_common_large"
+        android:gravity="center"
+        android:padding="@dimen/space_common"
+        android:text="@string/login_start_bottom"
+        android:textColor="@color/text_gray_deep"
+        android:textSize="@dimen/text_common_small_x" />
+</RelativeLayout>

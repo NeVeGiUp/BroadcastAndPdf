@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_yiti_shape"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/space_common_small"
+        android:paddingBottom="@dimen/space_common_small">
+        <TextView
+            android:id="@+id/tv_management_topic_item_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_common_large" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="15dp">
+            <TextView
+                android:id="@+id/tv_management_topic_item_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:layout_marginEnd="25dp"
+                android:textColor="@color/color_gray"
+                android:visibility="invisible"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/space_common_small_x"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:layout_gravity="center_vertical"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_management_topic_item_report"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_management_topic"
+            android:layout_width="96dp"
+            android:layout_height="36dp"
+            android:layout_marginRight="25dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@color/common_transparent"
+            />
+        <Button
+            android:id="@+id/btn_management_inform"
+            android:layout_width="96dp"
+            android:layout_height="36dp"
+            android:layout_marginRight="25dp"
+            android:textSize="16sp"
+            android:text="准备通知"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_green_15radius"
+            />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

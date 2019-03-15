@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_entryfinger_title"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/fingersise"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colot_meetingList_itembg"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:textSize="22sp"
+        android:text="指纹登录" />
+
+    <RelativeLayout
+        android:id="@+id/rel_entry_fingerprint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/tv_entryfinger_title"
+       >
+
+        <ImageView
+            android:id="@+id/img_entryfinger_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_common_large_x"
+            android:background="@mipmap/fingerprint0" />
+
+
+        <TextView
+            android:id="@+id/tv_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_entryfinger_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/right_bar_width"
+            android:text="@string/entry_fingerprint_tip"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_common_small"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/tv_entryfinger_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/space_common_large_xx"
+            android:layout_marginTop="30dp"
+            android:text="@string/comment_cancel"
+            android:textColor="@color/colot_meetingList_itembg"
+            android:textSize="@dimen/text_common_large_x" />
+    </RelativeLayout>
+</LinearLayout>

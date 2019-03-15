@@ -1,0 +1,393 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itc.suppaperless.meetingmodule.fragment.MeetingInfoFragment"
+    android:orientation="horizontal"
+    android:background="@color/color_background_isselect">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_hyxx_info"
+        android:layout_margin="@dimen/dp_10"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="会议信息"
+            android:gravity="center"
+            android:layout_marginLeft="13dp"
+            android:textColor="@color/color_gray"
+            android:textSize="18sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"/>
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <ImageView
+                android:id="@+id/iv_meeting_info_01"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@mipmap/hyxx_hymc_n" />
+
+            <TextView
+                android:id="@+id/tv_meeting_info_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/iv_meeting_info_01"
+                android:gravity="center_vertical"
+                android:text="会议名称"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_meeting_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_meeting_info_01"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/iv_meeting_info_01"
+                android:text=""
+                android:textSize="16sp"
+                android:textColor="@color/style_all_common_color"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <ImageView
+                android:id="@+id/iv_meeting_info_02"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@mipmap/hyxx_hydd_n" />
+
+            <TextView
+                android:id="@+id/tv_meeting_info_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/iv_meeting_info_02"
+                android:gravity="center_vertical"
+                android:text="会议地点"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_meeting_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_meeting_info_02"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/iv_meeting_info_02"
+                android:text=""
+                android:textSize="16sp"
+                android:textColor="@color/style_all_common_color"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/r3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <ImageView
+                android:id="@+id/iv_meeting_info_03"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@mipmap/hyxx_time_n" />
+
+            <TextView
+                android:id="@+id/tv_meeting_info_03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/iv_meeting_info_03"
+                android:gravity="center_vertical"
+                android:text="会议时间"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_meeting_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_meeting_info_03"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/iv_meeting_info_03"
+                android:text=""
+                android:textSize="16sp"
+                android:textColor="@color/style_all_common_color"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/r4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <ImageView
+                android:id="@+id/iv_meeting_info_04"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@mipmap/hyxx_zcr_n" />
+
+            <TextView
+                android:id="@+id/tv_meeting_info_04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/iv_meeting_info_04"
+                android:gravity="center_vertical"
+                android:text="主持人"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_meeting_chairman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_meeting_info_04"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/iv_meeting_info_04"
+                android:text=""
+                android:textSize="16sp"
+                android:textColor="@color/style_all_common_color"/>
+
+        </RelativeLayout>
+<!--
+        <RelativeLayout
+            android:id="@+id/r5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <ImageView
+                android:id="@+id/iv_meeting_info_05"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@mipmap/hyxx_zcr_n" />
+
+            <TextView
+                android:id="@+id/tv_meeting_info_05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/iv_meeting_info_05"
+                android:gravity="center_vertical"
+                android:text="简介"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_meeting_jianjie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_meeting_info_05"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/iv_meeting_info_05"
+                android:text=""
+                android:textSize="16sp"
+                android:textColor="@color/style_all_common_color"/>
+
+        </RelativeLayout>
+-->
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_hyxx_info"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="会议信息"
+            android:gravity="center"
+            android:layout_marginLeft="13dp"
+            android:textColor="@color/color_gray"
+            android:textSize="18sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"/>
+        <RelativeLayout
+            android:id="@+id/rl_view_width"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="13dp">
+            <TextView
+                android:id="@+id/tv_top"
+                android:layout_width="0dp"
+                android:background="@color/color_progress"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"/>
+            <LinearLayout
+                android:id="@+id/ll_yicheng"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/bg_meetingvote_shape"
+                android:visibility="gone">
+                <ImageView
+                    android:id="@+id/iv_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/pdf_icon2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_10"/>
+
+                <TextView
+                    android:id="@+id/tv_upload_title"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/comment_upload_marginlefttwo_mobile"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_common" />
+                <TextView
+                    android:id="@+id/download_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/space_common"
+                    android:textColor="@color/common_black"
+                    android:text="@string/file_waiting_download"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="gone"
+                   />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+<!--
+    <LinearLayout
+        android:id="@+id/ll_message_caidan"
+        android:background="@drawable/bg_hyxx_title"
+        android:layout_width="match_parent"
+        android:layout_height="84dp">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+        <LinearLayout
+            android:id="@+id/ll_title"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_hyxx_info">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_meeting_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="会议信息"
+                android:textSize="18sp"
+                android:textColor="@color/color_333333"
+                android:layout_centerInParent="true"/>
+                <TextView
+                    android:id="@+id/tv_meeting_line"
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colot_meetingList_itembg"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="3dp"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_person_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人员信息"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_gray_deep"
+                    android:layout_centerInParent="true"/>
+                <TextView
+                    android:id="@+id/tv_person_info_line"
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colot_meetingList_itembg"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="3dp"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_spec_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="配置信息"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_gray_deep"
+                    android:layout_centerInParent="true"/>
+                <TextView
+                    android:id="@+id/tv_pspec_line"
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colot_meetingList_itembg"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="3dp"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+-->
+<!--
+    <FrameLayout
+        android:id="@+id/fl_hyxx_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginRight="55dp"
+        android:layout_marginLeft="55dp"/>
+-->
+
+
+
+</LinearLayout>

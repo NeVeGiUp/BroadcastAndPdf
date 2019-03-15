@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="0dp"
+    android:background="@color/line_bg_light"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:id="@+id/panel_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_light_back"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="@dimen/space_common_mid"
+            android:paddingBottom="@dimen/space_common_mid"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_checkBox_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/space_common_large"
+                android:paddingEnd="@dimen/space_common_large"
+                android:paddingTop="@dimen/space_common"
+                android:paddingBottom="@dimen/space_common"
+                android:layout_gravity="center_vertical">
+                <CheckBox
+                    android:id="@+id/checkBox_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/check_state"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_fileName"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/button_comment_height"
+                android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_comment_height"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@mipmap/ic_ls_sousuo_icon"
+                    android:drawablePadding="@dimen/upload_marginLeft_small"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/upload_marginLeft_small"
+                    android:paddingRight="@dimen/comment_upload_marginright"
+                    android:text="@string/search"
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_common_white"
+                    />
+
+            <TextView
+                android:id="@+id/tv_quit"
+                android:layout_width="@dimen/button_comment_write"
+                android:layout_height="@dimen/button_comment_height"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center_vertical|right"
+                android:text="@string/exit"
+                android:gravity="center"
+                android:textSize="@dimen/text_common_small"
+                android:textColor="@android:color/white"
+                android:background="@drawable/btn_login"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_comment_separate"
+        android:background="@color/line_bg_light"
+        android:layout_below="@id/panel_top"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lv_filelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/panel_top"
+        android:layout_above="@+id/rl_upload"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:id="@+id/layout_no_file_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_below="@+id/panel_top"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="@dimen/bg_bottom_height"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_nofile"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="@dimen/space_common"
+        android:paddingBottom="@dimen/space_common"
+        android:background="@color/gray_light_back">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_comment_height"
+            android:background="@drawable/btn_login"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:clickable="false"
+            android:paddingStart="@dimen/button_comment_write"
+            android:paddingRight="@dimen/button_comment_write"
+            android:textSize="@dimen/text_common_small"
+            android:text="@string/meeting_jilu_upload"/>
+
+    </RelativeLayout>
+</RelativeLayout>

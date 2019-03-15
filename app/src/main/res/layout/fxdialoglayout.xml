@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" xmlns:android1="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android1:id="@+id/panel_top"
+        android1:layout_width="match_parent"
+        android1:layout_height="wrap_content"
+        android1:layout_centerVertical="false"
+        android1:orientation="vertical" >
+
+        <TextView
+            android1:id="@+id/label_title"
+            android1:layout_width="match_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentStart="true"
+            android1:layout_margin="10dp"
+            android1:text="this is title" />
+
+        <TextView
+            android1:id="@+id/label_fileMemo"
+            android1:layout_width="match_parent"
+            android1:layout_height="1dp"
+            android1:layout_alignParentStart="false"
+            android1:layout_marginLeft="3dp"
+            android1:layout_marginRight="3dp"
+            android1:background="#0066ee"
+            android1:text="TextView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android1:id="@+id/panel_control"
+        android1:layout_width="match_parent"
+        android1:layout_height="match_parent"
+        android1:layout_above="@+id/frbt_buttons"
+        android1:layout_below="@+id/panel_top"
+        android1:layout_marginBottom="10dp"
+        android1:layout_marginTop="10dp"
+        android1:gravity="center_vertical|center_horizontal"
+        android1:orientation="vertical" >
+
+    </LinearLayout>
+
+	<fhj.myctrls.FxRadioButton
+	    android1:id="@+id/frbt_buttons"
+	    android1:layout_width="match_parent"
+	    android1:layout_height="35dp"
+	    android1:layout_alignParentBottom="true" />
+
+</RelativeLayout>

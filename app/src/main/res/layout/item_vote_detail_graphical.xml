@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/yiti_height_mobile"
+    android:id="@+id/lin_progress"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_vote_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/btn_color_toupiao_text"
+        android:text="99"
+        android:textSize="@dimen/text_common_large" />
+    <View
+        android:id="@+id/view_progress"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="40dp"
+        android:background="@color/btn_color_toupiao_text"/>
+
+    <TextView
+        android:id="@+id/tv_option_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/btn_color_toupiao_text"
+        android:maxLength="5"
+        android:text="测试"
+        android:textSize="14sp" />
+</LinearLayout>
+
+

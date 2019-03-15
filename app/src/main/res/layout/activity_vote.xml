@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_vote_main"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.itc.suppaperless.meeting_vote.ui.VoteActivity">
+
+    <TextView
+        android:id="@+id/tv_vote_title"
+        android:text="大唐最帅肥子"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/space_common_mid"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <cn.carbs.android.expandabletextview.library.ExpandableTextView
+        android:id="@+id/tv_vote_content"
+        android:layout_marginTop="@dimen/space_common_mid"
+        app:layout_constraintTop_toBottomOf="@+id/tv_vote_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingLeft="@dimen/space_common"
+        android:paddingRight="@dimen/space_common"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:text="萨达科技的萨拉看到你快乐撒娇的来看撒娇的快乐撒娇的快乐撒娇的坑垃圾的快乐撒娇的快乐撒娇考虑大家爱看了大家爱看了大家爱看了大家爱看了大家爱看连接打开啦觉得卡连接端口垃圾的坑垃圾的坑垃圾的考拉进口量达酒店可垃圾的坑垃圾的坑垃圾坑了大家看了家看了大家快来点击阿卡丽"
+        android:textSize="@dimen/text_common_large"
+        android:textColor="@color/white"
+        expandableTextView:etv_MaxLinesOnShrink="2"
+        expandableTextView:etv_ToExpandHint="展开"
+        expandableTextView:etv_ToShrinkHint="收起" />
+
+    <TextView
+        android:id="@+id/tv_option"
+        android:text="@string/option"
+        android:layout_marginLeft="@dimen/space_common"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/space_common"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_vote_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_option_model"
+        app:layout_constraintLeft_toRightOf="@+id/tv_option"
+        android:textColor="@color/white"
+        android:text="单选"
+        android:layout_marginLeft="@dimen/space_common_mid"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/lin_vote_countdown"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/space_common"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_option_model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/white"
+            android:text="@string/vote_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_countdown_time"
+            android:layout_marginLeft="@dimen/space_common_mid"
+            android:text="00:00"
+            android:textColor="@color/btn_color_toupiao_control_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_vote_finish"
+        android:text="你已完成投票"
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/space_common"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_option_model"
+        android:textColor="@color/btn_color_toupiao_control_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_option"
+        android:background="@color/color_blue_top_divide"
+        android:layout_marginLeft="@dimen/space_common"
+        android:layout_marginRight="@dimen/space_common"
+        android:layout_marginTop="@dimen/space_common_mid"
+        app:layout_constraintTop_toBottomOf="@+id/tv_option_model"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/space_common"
+        android:layout_marginLeft="@dimen/space_common"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_option"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_total_people"
+            android:textColor="@color/white"
+            android:text="共89人参与投票"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/space_common"
+            android:textColor="@color/white"
+            android:text="@string/voted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_voted_num"
+            android:textColor="@color/btn_color_toupiao"
+            android:text="89"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:text="@string/person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/space_common"
+            android:textColor="@color/white"
+            android:text="@string/not_vote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv_not_vote_num"
+            android:textColor="@color/btn_color_toupiao_control_close"
+            android:text="89"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:text="@string/person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_vote_sure"
+        android:layout_marginTop="@dimen/space_common"
+        app:layout_constraintTop_toBottomOf="@+id/rv_option"
+        android:textColor="@color/white"
+        android:text="@string/sure"
+        android:background="@drawable/bg_green"
+        android:textSize="@dimen/text_common"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:layout_marginRight="@dimen/space_common"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_vote_back"
+        android:layout_marginTop="@dimen/space_common"
+        app:layout_constraintTop_toBottomOf="@+id/rv_option"
+        android:textColor="@color/white"
+        android:text="@string/meeting_jilu_back"
+        android:background="@drawable/bg_stroke_white"
+        android:textSize="@dimen/text_common"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:layout_marginRight="@dimen/space_common"
+        app:layout_constraintRight_toLeftOf="@+id/tv_vote_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_vote_remark"
+        android:layout_marginTop="@dimen/space_common"
+        app:layout_constraintTop_toBottomOf="@+id/rv_option"
+        android:textColor="@color/white"
+        android:text="@string/comment"
+        android:background="@drawable/bg_blue_6radius"
+        android:textSize="@dimen/text_common"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:layout_marginRight="@dimen/space_common"
+        android:visibility="gone"
+        app:layout_constraintRight_toLeftOf="@+id/tv_vote_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</android.support.constraint.ConstraintLayout>

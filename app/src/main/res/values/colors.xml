@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <!--状态栏-->
+    <color name="colorPrimaryDark">#4D000000</color>
+    <!--光标颜色-->
+    <color name="colorAccent">#666666</color>
+    <!--渐变绿-->
+    <!--渐变蓝-->
+    <!--登录按钮-->
+    <color name="color_login_btn_green">#07AABE</color>
+    <!--登录背景-->
+    <color name="color_background_gray">#F4F7FC</color>
+    <!--会议列表选中时背景-->
+    <color name="color_background_isselect">#D8E7F0</color>
+    <!--会议列表选中时背景-->
+    <color name="color_background_expandableListView">#f6f6f6f6</color>
+    <!--登录渐变底部背景颜色-->
+    <color name="color_login_bottom">#E7E7E7</color>
+    <!--分割线-->
+    <!--下划线和选中字体颜色-->
+    <color name="color_green_View">#05abbf</color>
+    <!--右侧菜单-->
+    <color name="color_toast">#000000</color>
+
+    <!-- 基本绿色 -->
+    <!-- 基本的蓝色 -->
+    <!-- 深色字体 -->
+    <color name="common_black">#ff333333</color>
+    <!-- 浅色字体 -->
+    <color name="light_black">#ff666666</color>
+    <!-- 全透明 -->
+    <color name="common_transparent">#00000000</color>
+    <!-- 黑色透明 -->
+    <!-- 提醒数字的背景色 -->
+    <!-- 基本红色 -->
+    <color name="common_red">#ffe93012</color>
+    <color name="common_red_30_alpha">#54e93012</color>
+    <color name="common_red_light">#d54a4a</color>
+    <!-- 基本的分割线的颜色 -->
+    <color name="common_red_light_s">#ff7066</color>
+    <!-- 基本的背景的颜色 -->
+    <!-- 基本的背景的颜色 -->
+    <!-- 灰色 -->
+    <!-- 浅灰色 -->
+    <!--侧边栏透明度-->
+    <!-- 灰色透明 -->
+    <!-- 用户顶部中心字体 -->
+    <!-- 用户顶部返回字体 -->
+    <color name="user_info_back">#898989</color>
+    <!-- list间的分隔线 -->
+    <color name="list_divider">#f6f6f6</color>
+    <!-- 字体基本颜色 -->
+    <!-- 安全块字体颜色 -->
+    <!-- 安全块输入字体颜色 -->
+    <!-- 订单顶部栏目的颜色 -->
+    <!-- 注册字体颜色 -->
+    <!--进度条颜色-->
+    <color name="color_progress">#46A0B4</color>
+    <!--默认的灰色字体颜色-->
+    <color name="color_gray">#999999</color>
+    <color name="translucent">#7f000000</color><!--半透明-->
+    <color name="color_333333">#333333</color>
+    <color name="color_d2d2d2">#d2d2d2</color>
+    <color name="color_2875F5">#2875F5</color>
+    <color name="light_jilu_gray">#e3e3e3</color>
+
+    <color name="style_all_pressed_color">#07aabe</color>
+    <color name="style_all_common_color">#666666</color>
+    <color name="style_btn_rim">#bedde1</color>
+    <color name="line_bg">#d9d9d9</color>
+    <color name="line_bg_light">#EEEEEE</color>
+    <color name="jilu_line_bg_light">#4C516A</color>
+
+    <color name="gray_light_back">#cccccc</color>
+    <color name="light_blue_light">#ecf2ff</color>
+    <color name="gray_back">#091a46</color>
+    <color name="gray_view1">#dddddd</color>
+    <color name="blue_comment01">#7184fe</color>
+    <color name="blue_comment02">#dde6ff</color>
+    <color name="gray_light">#EEEEEE</color>
+    <color name="gray_light_xx">#999999</color>
+    <color name="text_blue_common">#3ca1f8</color>
+
+    <!--常用色-->
+    <!--白-->
+    <color name="white">#ffffff</color>
+    <!--黑-->
+    <color name="black">#000000</color>
+
+    <color name="text_black_common">#3f3f3f</color><!-- 用户名 / 正文 -->
+    <color name="text_gray_deep">#666666</color><!-- 辅助文字 / 时间 -->
+    <color name="text_gray_light">#999999</color><!-- 提示文字 / 禁用 -->
+
+    <color name="line_gray_deep">#cccccc</color><!-- 深色辅助线 / 分割线 -->
+    <color name="line_gray_light">#dddddd</color><!-- 浅色辅助线 / 分割线 -->
+
+    <color name="bg_gray_all">#dddddd</color><!-- 全局背景 -->
+
+    <color name="color_blue_deep_x">#17192f</color> <!-- 顶部背景色 -->
+    <color name="color_blue_deep">#2e4fa3</color> <!-- 深蓝色 -->
+    <color name="color_blue_common">#7184fe</color> <!-- 常用蓝色 -->
+    <color name="color_blue_light">#94b2ff</color> <!-- 浅蓝色 -->
+    <color name="color_blue_light_x">#78ddff</color> <!-- 蓝白色  动态引导页背景 -->
+    <color name="color_blue_light_xx">#c3d6ff</color>  <!--消息编辑框 背景色-->
+    <color name="color_blue_top_divide">#F1F1F6</color> <!--标题分隔栏 背景色-->
+    <color name="color_white_deep">#f6fefb</color> <!--投票的背景色以及文字颜色-->
+    <color name="color_green_btn">#8bc34a</color> <!--按钮绿-->
+    <color name="color_blue_btn">#1791ff</color> <!--按钮绿-->
+    <!--投票统一背景颜色-->
+    <!--投票柱状图背景-->
+
+    <color name="main_color">#7f000000</color><!--首页背景色-->
+    <color name="main_blue_color">#3291FF</color>
+    <color name="colot_meetingList_itembg">#1791ff</color>
+    <color name="color_blue_finger_text">#9ba5ff</color>
+    <color name="color_green_lrcg">#77c62d</color>
+
+
+    <color name="red">#a2000d</color>
+
+    <color name="gray_prime">#eeeeee</color>
+    <color name="gray_primary_dark">#616161</color>
+    <color name="live_edit_frame">#979797</color>
+
+    <!--Material Design Colors-->
+    <color name="red_400">#ff0007</color>
+    <!--Holo Colors-->
+    <color name="holo_gray">#999999</color>
+
+    <color name="wzh_color_rightbar_bg">#161726</color>
+    <color name="wzh_color_title">#16182e</color>
+    <color name="wzh_color_frag_bg">#f1f1f6</color>
+    <!--投票颜色-->
+    <color name="btn_color_toupiao">#28b464</color>
+    <color name="btn_color_toupiao_control">#8bc34a</color>
+    <color name="btn_color_toupiao_control_close">#f36322</color>
+    <color name="btn_color_toupiao_text">#1792ff</color>
+
+
+    <color name="color_start_vote_font_red">#f36323</color>
+
+    <!--备注弹出框背景颜色-->
+    <color name="color_dialog_comment">#313344</color>
+
+    <!--会议交流常用颜色-->
+    <color name="corlor_jiaoliu_blue">#3396fa</color>
+
+    <color name="corlor_yiti_green">#28b365</color>
+    <color name="color_meeting_green">#8BC34A</color>
+    <color name="text_color_gray">#bbbbbb</color>
+
+</resources>

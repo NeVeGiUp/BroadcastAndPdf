@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?><!--android:background="@color/common_light_black_transparent"--><!--xmlns:tools="http://schemas.android.com/tools"-->
+
+<!-- 点击弹出的提示dialog -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/custom_dialog_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/duihuakuang">
+
+    <ImageView
+        android:id="@+id/dialog_new_img"
+        android:layout_width="@dimen/custom_dialog_width"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/icon_tongzhi_n" />
+    <!--android:scaleType="centerCrop"-->
+
+    <TextView
+        android:id="@+id/dialog_new_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_new_img"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/space_common_small"
+        android:layout_marginStart="@dimen/space_common_small"
+        android:layout_marginEnd="@dimen/space_common_small"
+        android:lineSpacingExtra="@dimen/space_common_large"
+        android:textSize="17sp"
+        android:textColor="#333333"
+        />
+
+    <View
+        android:id="@+id/custom_top_line"
+        android:layout_width="@dimen/custom_dialog_width"
+        android:layout_height="0.3dp"
+        android:layout_below="@id/dialog_new_content"
+        android:layout_marginTop="@dimen/space_common_large"
+        android:layout_marginBottom="@dimen/space_common_small"
+        android:background="#dddddd" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_btn_height"
+        android:layout_below="@id/custom_top_line"
+        android:paddingEnd="@dimen/space_common_small"
+        android:paddingStart="@dimen/space_common_small"
+        android:layout_marginBottom="@dimen/space_common_small">
+
+        <TextView
+            android:id="@+id/dialog_new_cancle"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingTop="@dimen/space_common_small"
+            android:paddingBottom="@dimen/space_common_small"
+            android:paddingStart="@dimen/space_common_small"
+            android:textStyle="bold"
+            android:text="@string/comment_cancel"
+            android:textColor="#666666"
+            android:textSize="@dimen/text_common_large" />
+
+        <View
+            android:id="@+id/dialog_new_line"
+            android:layout_width="0.3dip"
+            android:layout_height="wrap_content"
+            android:background="#dddddd" />
+
+        <TextView
+            android:id="@+id/dialog_new_confirm"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/space_common_small"
+            android:paddingBottom="@dimen/space_common_small"
+            android:paddingEnd="@dimen/space_common_small"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/comment_sure"
+            android:textColor="#7184fe"
+            android:textSize="@dimen/text_common_large" />
+
+    </LinearLayout>
+    <!--<LinearLayout-->
+    <!--android:id="@+id/custom_cancel_dialog_ll"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="58dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:orientation="horizontal" >-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/custom_cancel_dialog_confirm"-->
+    <!--android:layout_width="0px"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@drawable/bg_click_change_gray"-->
+    <!--android:gravity="center_vertical|center_horizontal"-->
+    <!--android:textColor="#898989"-->
+    <!--android:textSize="16sp" />-->
+
+    <!--<View-->
+    <!--android:id="@+id/custom_cancel_dialog_line"-->
+    <!--android:layout_width="0.3dip"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="#d9d9d9"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/custom_ok_dialog_confirm"-->
+    <!--android:layout_width="0px"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@drawable/bg_click_change_gray"-->
+    <!--android:gravity="center"-->
+    <!--android:textColor="#05abbf"-->
+    <!--android:textSize="16sp" />-->
+    <!--</LinearLayout>-->
+</RelativeLayout>
+

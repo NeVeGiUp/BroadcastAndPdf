@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/ll_root_view">
+    <RelativeLayout
+        android:id="@+id/rl_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_meetserver">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_common_large"
+            android:textColor="@color/white"
+            android:text="@string/meeting_service"
+            android:textSize="@dimen/text_common"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/but_guanbi_n"
+            android:paddingTop="@dimen/space_common_small"
+            android:paddingEnd="@dimen/space_common_small"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/tv_else_btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_common_small_x"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_common_blue"
+            android:paddingTop="@dimen/space_common_small"
+            android:paddingBottom="@dimen/space_common_small"
+            android:paddingLeft="@dimen/space_common_large"
+            android:paddingRight="@dimen/space_common_large"
+            android:layout_marginBottom="@dimen/space_common_large"
+            android:layout_marginRight="@dimen/space_common_large"/>
+
+        <TextView
+            android:id="@+id/tv_else_btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comment_cancel"
+            android:textColor="@color/text_gray_light"
+            android:textSize="@dimen/text_common_small_x"
+            android:layout_toLeftOf="@id/tv_else_btn_send"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_edittext_stroke"
+            android:paddingTop="@dimen/space_common_small"
+            android:paddingBottom="@dimen/space_common_small"
+            android:paddingLeft="@dimen/space_common_large"
+            android:paddingRight="@dimen/space_common_large"
+            android:layout_marginRight="@dimen/space_common_small"
+            android:layout_marginBottom="@dimen/space_common_large"/>
+
+        <EditText
+            android:id="@+id/et_else_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/fuwu_edt_remind"
+            android:gravity="start"
+            android:padding="@dimen/space_common_mid"
+            android:layout_above="@id/tv_else_btn_send"
+            android:layout_below="@id/tv_title"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/space_common_large"
+            android:layout_marginBottom="@dimen/space_common_large"
+            android:layout_marginLeft="@dimen/space_common_large"
+            android:layout_marginRight="@dimen/space_common_large"/>
+    </RelativeLayout>
+</LinearLayout>

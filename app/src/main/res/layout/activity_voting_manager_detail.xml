@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/background">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_common_large"
+        android:src="@mipmap/icon_daojishi_n_m"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/vote_result_exit"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/but_guanbi_n" />
+
+    <TextView
+        android:id="@+id/vote_result_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/space_common_large_xx"
+        tools:text="污污污污污污污问问投票结果"
+        android:textColor="@color/color_white_deep"
+        android:textSize="@dimen/text_common_large_x" />
+    <ImageView
+        android:id="@+id/iv_passing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:src="@mipmap/img_adopt_n"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/ll_menu"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/vote_result_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="50dp"
+            android:paddingLeft="50dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/vote_result_has_voted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_white_deep"
+                    android:textSize="@dimen/text_toupiao_num_size"
+                    android:textStyle="bold"
+                    tools:text="19" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/voted"
+                    android:textColor="@color/color_white_deep"
+                    android:textSize="@dimen/text_common_small_x" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/vote_result_not_voted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="1"
+                    android:textColor="@color/color_white_deep"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_toupiao_num_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/not_vote"
+                    android:textColor="@color/color_white_deep"
+                    android:textSize="@dimen/text_common_small_x" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/vote_result_total_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="1"
+                    android:textColor="@color/color_white_deep"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_toupiao_num_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total"
+                    android:textColor="@color/color_white_deep"
+                    android:textSize="@dimen/text_common_small_x" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingRight="80dp"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/vote_result_cast_srceen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/tpgl_tp_n"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:text="@string/cast_screen"
+                android:textSize="@dimen/text_common_small_x" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginStart="@dimen/space_common_large_xx"
+                android:drawablePadding="@dimen/space_common_small_x"
+                android:background="@mipmap/tpgl_qxtp_n"
+                android:text="@string/comment_cancel"
+                android:gravity="bottom|center_horizontal"
+                android:textSize="@dimen/text_common_small_x"
+                />
+            <TextView
+                android:id="@+id/vote_result_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginStart="@dimen/space_common_large_xx"
+                android:drawablePadding="@dimen/space_common_small_x"
+                android:background="@mipmap/tpgl_xq_n"
+                android:text="@string/details"
+                android:gravity="bottom|center_horizontal"
+                android:textSize="@dimen/text_common_small_x" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_vote_result_graphical"
+        android:layout_below="@+id/ll_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/space_common_large"
+        android:layout_marginRight="@dimen/space_common_large"
+        android:layout_marginBottom="@dimen/space_common_large"
+        android:background="@mipmap/bg_vote"
+        android:layout_marginTop="@dimen/dp_10">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/vote_chart_rv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/fl_vote_result_word"
+        android:layout_below="@+id/ll_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/space_common_large"
+        android:layout_marginRight="@dimen/space_common_large"
+        android:layout_marginBottom="@dimen/space_common_large"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@color/color_blue_top_divide" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:gravity="center">
+            <LinearLayout
+                android:id="@+id/lin_voted"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/vote_details_has_cast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/has_voted"
+                    android:layout_marginTop="8dp"
+                    android:textSize="@dimen/text_common_large"
+                    android:textColor="@color/text_black_common"
+                    />
+                <View
+                    android:id="@+id/vote_details_has_cast_line"
+                    android:layout_marginTop="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pizhu_line_height"
+                    android:background="@color/color_blue_btn" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lin_not_voting"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginLeft="30dp">
+                <TextView
+                    android:id="@+id/vote_details_not_cast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/not_voted"
+                    android:layout_marginTop="8dp"
+                    android:textSize="@dimen/text_common_large"
+                    android:textColor="@color/text_gray_light" />
+                <View
+                    android:id="@+id/vote_details_not_cast_line"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_height="@dimen/pizhu_line_height"
+                    android:visibility="invisible"
+                    android:background="@color/color_blue_btn" />
+            </LinearLayout>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/vote_details_info_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/space_common" />
+    </LinearLayout>
+
+</RelativeLayout>
